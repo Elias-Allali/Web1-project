@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500&display=swap');
 
+
 html {
   scroll-behavior: smooth;
   overflow: auto;
@@ -102,7 +103,7 @@ li:hover {
   display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  /* center the image horizontally and vertically */
+  transform: translate(-50%, -50%); 
   height: auto;
   max-height: 100%;
   max-width: 100%;
@@ -140,13 +141,13 @@ li:hover {
 }
 
 .info-box {
-  background-color: #F2ECE3; /* Add a background color */
+  background-color: #F2ECE3; 
   color: #49352C;
   font-family: 'Lora';
   font-size: 20px;
-  border-radius: 24px; /* Add rounded edges */
-  padding: 20px; /* Add some padding */
-  width: 500px; /* Set the width of the box */
+  border-radius: 24px;
+  padding: 20px; 
+  width: 500px;
   height: 200px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -160,8 +161,8 @@ li:hover {
 }
 
 .info-box::first-letter {
-  font-size: 2em; /* Increase the font size */
-  text-transform: uppercase; /* Capitalize the letter */
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -173,7 +174,7 @@ li:hover {
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* center the image horizontally and vertically */
+    transform: translate(-50%, -50%); 
     height: auto;
     max-height: 90%;
     max-width: 90%;
@@ -187,17 +188,6 @@ li:hover {
   text-align: center;
   margin: 100px 150px 100px 150px;
   font-size: 26px;
-}
-
-.headline span {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMjAwMTA5MDQvL0VOIgogICAgICAgICAgICAgICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+Cgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgICB3aWR0aD0iMWluIiBoZWlnaHQ9IjAuNWluIgogICAgIHZpZXdCb3g9IjAgMCAzMDAgMTUwIj4KICA8cGF0aAogICAgICAgIGZpbGw9IiNmZmUwMDAiIHN0cm9rZT0ibm9uZSIKICAgICAgICBkPSJNIDEyLjAwLDQ4LjAwCiAgICAgICAgICAgQyAxMi4wMCw1MC4wOSAxMS43OSw1NC45OSAxMi42MCw1Ni43MgogICAgICAgICAgICAgMTUuNTksNjMuMTggMjYuMDksNTYuNjQgMzMuMDAsNjMuMDAKICAgICAgICAgICAgIDMwLjg0LDYzLjE4IDIzLjA1LDYzLjg3IDIxLjgwLDY1LjAyCiAgICAgICAgICAgICAxOC4wMiw2Ny44OCAyMS4yOSw3Ni4zNSAyMS44MCw4MC4wMAogICAgICAgICAgICAgMjEuODAsODAuMDAgMjEuODAsODYuMDAgMjEuODAsODYuMDAKICAgICAgICAgICAgIDIxLjgwLDg2LjAwIDQwLjAwLDg3LjAwIDQwLjAwLDg3LjAwCiAgICAgICAgICAgICAzOS45Myw4OC44OCA0MC4wNiw5MS4wNCAzOC45OCw5Mi42OQogICAgICAgICAgICAgMzcuNTEsOTQuOTMgMzUuMTUsOTQuNzUgMzIuNTksOTYuMjAKICAgICAgICAgICAgIDI4LjMzLDk4LjYxIDI2Ljg3LDEwMi4yMiAyNy4zNCwxMDcuMDAKICAgICAgICAgICAgIDI3LjM0LDEwNy4wMCAzMC4wMiwxMjMuNDEgMzAuMDIsMTIzLjQxCiAgICAgICAgICAgICAzMS44MiwxMjUuNzUgNDAuMDEsMTI3Ljk1IDQzLjAwLDEyOC4wMAogICAgICAgICAgICAgNDMuMDAsMTI4LjAwIDg3LjAwLDEyOC4wMCA4Ny4wMCwxMjguMDAKICAgICAgICAgICAgIDg4LjA4LDEyMS41NiA5MS4xNiwxMjEuODAgOTcuMDAsMTIyLjA0CiAgICAgICAgICAgICA5Ny4wMCwxMjIuMDQgMTA5LjAwLDEyMy4wMCAxMDkuMDAsMTIzLjAwCiAgICAgICAgICAgICAxMDkuMDAsMTIzLjAwIDEyOC4wMCwxMjMuMDAgMTI4LjAwLDEyMy4wMAogICAgICAgICAgICAgMTI4LjAwLDEyMy4wMCAxODIuMDAsMTIyLjAwIDE4Mi4wMCwxMjIuMDAKICAgICAgICAgICAgIDE5NC41OCwxMjEuOTcgMTg4LjQyLDExOS4wMyAyMDEuMDAsMTE5LjAwCiAgICAgICAgICAgICAyMDEuMDAsMTE5LjAwIDI0My4wMCwxMTkuMDAgMjQzLjAwLDExOS4wMAogICAgICAgICAgICAgMjQzLjAwLDExOS4wMCAyNTguMDAsMTE4LjAwIDI1OC4wMCwxMTguMDAKICAgICAgICAgICAgIDI1OS41MywxMDkuMTAgMjY2LjAxLDExMy4zNyAyNzAuNDAsMTA5LjE1CiAgICAgICAgICAgICAyNzIuNjEsMTA3LjAzIDI3Mi4zMCwxMDAuODUgMjcyLjAwLDk4LjAwCiAgICAgICAgICAgICAyNzIuMDAsOTguMDAgMjgwLjAwLDk3LjAwIDI4MC4wMCw5Ny4wMAogICAgICAgICAgICAgMjgwLjAwLDk0LjEwIDI4MC4yNiw4OC41NSAyNzkuMjYsODYuMDIKICAgICAgICAgICAgIDI3Ni40OSw3OC45OCAyNjQuNjMsNzYuODggMjU4LjAwLDc2LjAwCiAgICAgICAgICAgICAyNjUuMTUsNjkuMTkgMjc2LjQwLDczLjAzIDI3NC44NSw2Mi4wNAogICAgICAgICAgICAgMjc0LjQ3LDU5LjM1IDI3My43Myw1OC44NSAyNzIuMDAsNTcuMDAKICAgICAgICAgICAgIDI4MS42OCw1My43NyAyODEuMDAsNTQuMjggMjgxLjAwLDQ0LjAwCiAgICAgICAgICAgICAyODEuMDAsNDQuMDAgMjU4LjAwLDQyLjM4IDI1OC4wMCw0Mi4zOAogICAgICAgICAgICAgMjUwLjAwLDQwLjg0IDI1MS40OCwzOC4wMyAyMzUuMDAsMzguMDAKICAgICAgICAgICAgIDIzNS4wMCwzOC4wMCAxODkuMDAsMzkuMDAgMTg5LjAwLDM5LjAwCiAgICAgICAgICAgICAxODkuMDAsMzkuMDAgMTc3LjAwLDM5LjgyIDE3Ny4wMCwzOS44MgogICAgICAgICAgICAgMTc3LjAwLDM5LjgyIDE1OS4wMCwzOC4wMCAxNTkuMDAsMzguMDAKICAgICAgICAgICAgIDE1OS4wMCwzOC4wMCAxMjguMDAsMzguMDAgMTI4LjAwLDM4LjAwCiAgICAgICAgICAgICAxMTYuOTAsMzguMDIgMTIwLjE2LDM5LjQwIDExMy4wMCw0MC42NwogICAgICAgICAgICAgMTEzLjAwLDQwLjY3IDk3LjAwLDQyLjE3IDk3LjAwLDQyLjE3CiAgICAgICAgICAgICA5Ny4wMCw0Mi4xNyA4Ny4wMCw0My44MyA4Ny4wMCw0My44MwogICAgICAgICAgICAgODcuMDAsNDMuODMgNTcuMDAsNDUuMDAgNTcuMDAsNDUuMDAKICAgICAgICAgICAgIDU3LjAwLDQ1LjAwIDMyLjAwLDQ4LjAwIDMyLjAwLDQ4LjAwCiAgICAgICAgICAgICAzMi4wMCw0OC4wMCAxMi4wMCw0OC4wMCAxMi4wMCw0OC4wMCBaIiAvPgo8L3N2Zz4K');
-  background-blend-mode: soft-light;
-  background-position: 50% 50%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .headline .line {
@@ -235,9 +225,9 @@ li:hover {
 }
 
 .img {
-  border-radius: 12px;  /* round the borders of the image */
-  width: 50%;  /* set the width of the image */
-  height: 50%;  /* set the height of the image */
+  border-radius: 12px; 
+  width: 50%; 
+  height: 50%;
   float: left;
   margin: 0 20px 0 0;
   max-height: 300px;
@@ -275,9 +265,9 @@ li:hover {
 }
 
 .img2 {
-  border-radius: 12px;  /* round the borders of the image */
-  width: 50%;  /* set the width of the image */
-  height: 50%;  /* set the height of the image */
+  border-radius: 12px; 
+  width: 50%; 
+  height: 50%; 
   float: right;
   margin: 0 0 0 20px;
   max-height: 300px;
@@ -470,28 +460,28 @@ footer {
 }
 
 button {
-  background-color: transparent;  /* remove the default background color of the buttons */
-  border: none;  /* remove the default border of the buttons */
-  color: black;  /* set the text color of the buttons */
-  font-size: 16px;  /* set the font size of the buttons */
+  background-color: transparent; 
+  border: none; 
+  color: black;  
+  font-size: 16px; 
   font-family: Montserrat;
   font-weight: 500;
-  cursor: pointer;  /* change the cursor to a pointer when hovering over the buttons */
+  cursor: pointer;  
 }
 
 .logo {
-  width: auto;  /* set the width of the logo */
-  height: auto;  /* set the height of the logo */
+  width: auto;  
+  height: auto;  
   max-height: 150px;
   max-width: 150px;
   margin: 20px;
 }
 
 .line {
-  width: 100%;  /* set the width of the line to fill the full width of the container */
-  height: 1px;  /* set the height of the line to 1 pixel */
-  background-color: gray;  /* set the color of the line */
-  margin: 20px 0;  /* add margin to the top and bottom of the line */
+  width: 100%; 
+  height: 1px;  
+  background-color: gray;  
+  margin: 20px 0; 
 }
 
 .copyright {
@@ -509,6 +499,78 @@ button {
   }
 }
 
+/* about page */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.about-h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  margin: 10px 10px 10px 10px;
+  outline: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.button1 {
+  border-bottom: 2px solid #f1d6b7;
+}
+
+.button2 {
+  border-bottom: 2px solid #9b9b9b;
+}
+.button:hover {
+  color: #575757;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  grid-gap: 20px;
+  width: 50%;
+  margin: 0 auto;
+  color:rgb(37, 37, 37);
+}
+
+.grid-item2 {
+  padding: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.image-trophy {
+  display: flex;
+  justify-content: center;
+}
+
+.trophy {
+  height: 80px;
+  margin: 0 20px;
+}
+
+.subscribe {
+  text-align: center;
+  margin: 50px auto;
+}
 
 /* scrollbar */
 
@@ -532,3 +594,4 @@ button {
   border-radius: 10px;
   border: 3px none #ffffff;
 }
+
