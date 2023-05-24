@@ -12,6 +12,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   transition: var(--transition);
+  line-height: 1.5;
 }
   
 body {
@@ -509,7 +510,7 @@ button {
 }
 
 .about-h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 
@@ -557,6 +558,22 @@ button {
   text-align: center;
 }
 
+.photo-aerial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Adjust the container height as needed */
+  margin: 20px;
+}
+
+.photo-aerial {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
 .image-trophy {
   display: flex;
   justify-content: center;
@@ -570,6 +587,123 @@ button {
 .subscribe {
   text-align: center;
   margin: 50px auto;
+}
+
+/* 3 Words */
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust the height as needed */
+  max-width: 1400px; /* Adjust the max width as needed */
+  margin: 0 auto; /* Center align the container horizontally */
+}
+
+.big-word {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+.text-container > div:nth-child(1) .big-word {
+  animation: flash-1 3s ease-in-out 0s infinite;
+}
+
+.text-container > div:nth-child(2) .big-word {
+  animation: flash-2 3s ease-in-out 3s infinite;
+}
+
+.text-container > div:nth-child(3) .big-word {
+  animation: flash-3 3s ease-in-out 6s infinite;
+}
+
+
+@keyframes flash-1 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  66.66% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes flash-2 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  66.66% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes flash-3 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  66.66% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+
+.subject {
+  font-size: 16px;
+  text-align: center; /* Center align the subject text */
+  max-width: 400px;
+  margin: 25px 50px 25px 50px;
+}
+
+.line2 {
+  display: flex;
+  justify-content: center;
+  width: 55%; 
+  height: 1px;  
+  background-color: gray;  
+  margin: 10px auto 10px auto; 
+}
+
+.path-line {
+  background-image: url(img/dline.jpg);
+  background-repeat: repeat-x;
+  background-position: center top;
+}
+
+.path-line body {
+  background-color: transparent;
 }
 
 /* scrollbar */
